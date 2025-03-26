@@ -1,0 +1,65 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  padding: 0px;
+  background-color: #000000;
+  display: flex;
+  user-select: none;
+}
+
+#res {
+  position: absolute;
+}
+
+#main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* Rimuoviamo position: absolute che interferisce con il flex */
+}
+
+#imagesUi {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+}
+
+.image-container {
+  flex: 1;  /* Questo distribuirà lo spazio equamente */
+  height: 100%;
+  display: none;
+  
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+}
+
+#res {
+  color: red;
+}
+
+/* #debug1 {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+} */
+
+/* #debug2 {
+  background-color: rgb(0, 255, 26);
+  width: 100%;
+  height: 100%;
+}
+
+#debug3 {
+  background-color: rgb(51, 0, 255);
+  width: 100%;
+  height: 100%;
+} */
